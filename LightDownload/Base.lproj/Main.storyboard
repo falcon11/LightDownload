@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CGO-Lt-Kg8">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="VSw-3q-UjK">
+            <objects>
+                <navigationController id="CGO-Lt-Kg8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HRh-bj-ER1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TY2-Qo-s2W"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZVg-vT-Agk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2790" y="187"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hmJ-aF-5r5">
+                                <rect key="frame" x="161" y="108" width="317" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="zPU-ph-shz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="zDo-hU-ulJ"/>
+                                </connections>
+                            </textField>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="J0Y-mL-PVs">
+                                <rect key="frame" x="169" y="225" width="317" height="3"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOk-SQ-Qv4">
+                                <rect key="frame" x="279" y="267" width="42" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdA-qm-B0x">
+                                <rect key="frame" x="285" y="343" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="downLoad:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hN9-90-d9N"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="URL：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3E-Kb-33t">
+                                <rect key="frame" x="99" y="112" width="50" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WcO-7V-4nW">
+                                <rect key="frame" x="180" y="381" width="240" height="199"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hmJ-aF-5r5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="20" id="0P0-8s-y1I"/>
+                            <constraint firstItem="WcO-7V-4nW" firstAttribute="top" secondItem="gdA-qm-B0x" secondAttribute="bottom" constant="8" id="2HR-4B-rKc"/>
+                            <constraint firstItem="gdA-qm-B0x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2Rv-et-2dV"/>
+                            <constraint firstItem="hmJ-aF-5r5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="88" id="3hu-be-viL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WcO-7V-4nW" secondAttribute="bottom" constant="8" id="5xA-pk-gS0"/>
+                            <constraint firstItem="J0Y-mL-PVs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="97D-6g-vzg"/>
+                            <constraint firstItem="l3E-Kb-33t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="92" id="ITp-MQ-fmB"/>
+                            <constraint firstItem="gdA-qm-B0x" firstAttribute="top" secondItem="oOk-SQ-Qv4" secondAttribute="bottom" constant="55" id="QaV-MQ-Mhk"/>
+                            <constraint firstItem="J0Y-mL-PVs" firstAttribute="top" secondItem="hmJ-aF-5r5" secondAttribute="bottom" constant="87" id="Z1R-gd-qPQ"/>
+                            <constraint firstItem="oOk-SQ-Qv4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bYb-1J-tFf"/>
+                            <constraint firstItem="hmJ-aF-5r5" firstAttribute="leading" secondItem="l3E-Kb-33t" secondAttribute="trailing" constant="12" id="rZg-16-1w2"/>
+                            <constraint firstItem="oOk-SQ-Qv4" firstAttribute="top" secondItem="J0Y-mL-PVs" secondAttribute="bottom" constant="40" id="vIN-cy-IWl"/>
+                            <constraint firstItem="WcO-7V-4nW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybC-Nk-rEu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="56S-rw-z96"/>
+                    <connections>
+                        <outlet property="downloadButton" destination="gdA-qm-B0x" id="jIQ-FJ-ejm"/>
+                        <outlet property="imageView" destination="WcO-7V-4nW" id="4eZ-3r-Oqf"/>
+                        <outlet property="progressBar" destination="J0Y-mL-PVs" id="3Fz-7W-5Wz"/>
+                        <outlet property="progressLabel" destination="oOk-SQ-Qv4" id="muF-hF-FiB"/>
+                        <outlet property="urlText" destination="hmJ-aF-5r5" id="S7W-wr-7Zt"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="Xnj-QE-dJx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2084" y="187"/>
+        </scene>
+    </scenes>
+</document>
