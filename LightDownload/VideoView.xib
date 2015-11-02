@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoView">
+            <connections>
+                <outlet property="label" destination="VkX-Ki-pfr" id="uDo-2q-cZY"/>
+                <outlet property="videoBackgroundView" destination="ICB-Zw-HL0" id="SWm-ll-VXp"/>
+                <outlet property="view" destination="iN0-l3-epB" id="bjV-4J-xTS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VkX-Ki-pfr">
+                    <rect key="frame" x="36" y="36" width="42" height="21"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ICB-Zw-HL0">
+                    <rect key="frame" x="100" y="85" width="400" height="300"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix0-iO-cbO">
+                    <rect key="frame" x="280" y="466" width="40" height="30"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="播放"/>
+                    <connections>
+                        <action selector="play:" destination="-1" eventType="touchUpInside" id="iMF-UG-2vf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ICB-Zw-HL0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2ua-2Y-np7"/>
+                <constraint firstItem="ICB-Zw-HL0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="85" id="CSB-aZ-eqm"/>
+                <constraint firstItem="Ix0-iO-cbO" firstAttribute="top" secondItem="ICB-Zw-HL0" secondAttribute="bottom" constant="81" id="JzZ-cY-B9P"/>
+                <constraint firstItem="VkX-Ki-pfr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="36" id="aoX-qH-JwN"/>
+                <constraint firstItem="VkX-Ki-pfr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="36" id="blL-zI-3GI"/>
+                <constraint firstItem="Ix0-iO-cbO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="uw2-U3-U26"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -26,7 +26,7 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"文件" style:UIBarButtonItemStylePlain target:self action:@selector(openFile)];
     self.title = @"下载";
     _urlText.delegate = self;
-    _urlText.text = @"http://dlsw.baidu.com/sw-search-sp/soft/90/25706/QQMusicForMacV2.2.1426490079.dmg";
+    _urlText.text = @"http://yinyueshiting.baidu.com/data2/music/247912224/24791165410800064.mp3?xcode=0c8ff2b5909679f9794b86d808232fc4";
     isFinished = NO;
     _progressBar.progress = 0.0;
     _progressLabel.text = [NSString stringWithFormat:@"%.1f%%", _progressBar.progress];
@@ -62,9 +62,9 @@
                 dispatch_async(dispatch_get_main_queue(), ^{
                     UIAlertView *tipView = [[UIAlertView alloc] initWithTitle:@"错误" message:error delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
                     [tipView show];
-                    [_downloadButton setTitle:@"开始" forState:UIControlStateNormal];
-                    _progressBar.progress = 0;
-                    _progressLabel.text = [[NSString alloc] initWithFormat:@"0%%"];
+                    [weakSelf.downloadButton setTitle:@"开始" forState:UIControlStateNormal];
+                    weakSelf.progressBar.progress = 0;
+                    weakSelf.progressLabel.text = [[NSString alloc] initWithFormat:@"0%%"];
                 });
                 
             }completion:^{
@@ -100,11 +100,7 @@
     }
     else if([[[_downloadButton titleLabel] text] isEqualToString:@"暂停"])
     {
-        
-        dispatch_async(dispatch_get_main_queue(),^{
-            [_downloadButton setTitle:@"开始" forState:UIControlStateNormal];
-        });
-        
+        [_downloadButton setTitle:@"开始" forState:UIControlStateNormal];
         if (_downloadService) {
             [_downloadService stop];
             _downloadService = nil;
@@ -112,11 +108,9 @@
     }
     else
     {
-        dispatch_async(dispatch_get_main_queue(),^{
-            [_downloadButton setTitle:@"开始" forState:UIControlStateNormal];
-            _progressBar.progress = 0;
-            _progressLabel.text = [[NSString alloc] initWithFormat:@"0%%"];
-        });
+        [_downloadButton setTitle:@"开始" forState:UIControlStateNormal];
+        _progressBar.progress = 0;
+        _progressLabel.text = [[NSString alloc] initWithFormat:@"0%%"];
     }
 }
 

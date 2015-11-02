@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4707E7F1BE74481002D0490 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E4707E7E1BE74481002D0490 /* Settings.bundle */; };
+		E4707E821BE751AD002D0490 /* PlayerSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = E4707E811BE751AD002D0490 /* PlayerSetting.m */; };
+		E4707E841BE751C1002D0490 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4707E831BE751C1002D0490 /* MediaPlayer.framework */; };
+		E4707E871BE75D95002D0490 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4707E861BE75D95002D0490 /* VideoView.m */; };
+		E4707E891BE75DFE002D0490 /* VideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4707E881BE75DFE002D0490 /* VideoView.xib */; };
+		E4707E8B1BE7654F002D0490 /* test.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E4707E8A1BE7654F002D0490 /* test.mp4 */; };
 		E4D798301BDD016B00CA3E58 /* FilesTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D7982F1BDD016B00CA3E58 /* FilesTableView.m */; };
 		E4D798321BDD01B100CA3E58 /* FilesTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4D798311BDD01B100CA3E58 /* FilesTableView.xib */; };
 		E4D798351BDDD46400CA3E58 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D798341BDDD46400CA3E58 /* ImageView.m */; };
@@ -14,6 +20,8 @@
 		E4D798391BDDFA0300CA3E58 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D798381BDDFA0200CA3E58 /* AudioToolbox.framework */; };
 		E4D7983B1BDE699B00CA3E58 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4D7983A1BDE699B00CA3E58 /* AVFoundation.framework */; };
 		E4D7983D1BDE6E7300CA3E58 /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E4D7983C1BDE6E7300CA3E58 /* 1.mp3 */; };
+		E4F8736C1BE70996001F35FB /* MusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F8736B1BE70996001F35FB /* MusicView.m */; };
+		E4F8736E1BE709AB001F35FB /* MusicView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4F8736D1BE709AB001F35FB /* MusicView.xib */; };
 		E4F95B7F1BCFA226006EF09B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F95B7E1BCFA226006EF09B /* main.m */; };
 		E4F95B821BCFA226006EF09B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F95B811BCFA226006EF09B /* AppDelegate.m */; };
 		E4F95B851BCFA227006EF09B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F95B841BCFA227006EF09B /* ViewController.m */; };
@@ -24,6 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E4707E7E1BE74481002D0490 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		E4707E801BE751AD002D0490 /* PlayerSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerSetting.h; path = Service/PlayerSetting.h; sourceTree = "<group>"; };
+		E4707E811BE751AD002D0490 /* PlayerSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayerSetting.m; path = Service/PlayerSetting.m; sourceTree = "<group>"; };
+		E4707E831BE751C1002D0490 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		E4707E851BE75D95002D0490 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoView.h; path = Controller/VideoView.h; sourceTree = "<group>"; };
+		E4707E861BE75D95002D0490 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoView.m; path = Controller/VideoView.m; sourceTree = "<group>"; };
+		E4707E881BE75DFE002D0490 /* VideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoView.xib; sourceTree = "<group>"; };
+		E4707E8A1BE7654F002D0490 /* test.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.mp4; sourceTree = "<group>"; };
 		E4D7982E1BDD016B00CA3E58 /* FilesTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FilesTableView.h; path = Controller/FilesTableView.h; sourceTree = "<group>"; };
 		E4D7982F1BDD016B00CA3E58 /* FilesTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FilesTableView.m; path = Controller/FilesTableView.m; sourceTree = "<group>"; };
 		E4D798311BDD01B100CA3E58 /* FilesTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilesTableView.xib; sourceTree = "<group>"; };
@@ -33,6 +49,9 @@
 		E4D798381BDDFA0200CA3E58 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		E4D7983A1BDE699B00CA3E58 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		E4D7983C1BDE6E7300CA3E58 /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		E4F8736A1BE70996001F35FB /* MusicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MusicView.h; path = Controller/MusicView.h; sourceTree = "<group>"; };
+		E4F8736B1BE70996001F35FB /* MusicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MusicView.m; path = Controller/MusicView.m; sourceTree = "<group>"; };
+		E4F8736D1BE709AB001F35FB /* MusicView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicView.xib; sourceTree = "<group>"; };
 		E4F95B7A1BCFA226006EF09B /* LightDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F95B7E1BCFA226006EF09B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4F95B801BCFA226006EF09B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4707E841BE751C1002D0490 /* MediaPlayer.framework in Frameworks */,
 				E4D7983B1BDE699B00CA3E58 /* AVFoundation.framework in Frameworks */,
 				E4D798391BDDFA0300CA3E58 /* AudioToolbox.framework in Frameworks */,
 			);
@@ -63,6 +83,7 @@
 		E4F95B711BCFA226006EF09B = {
 			isa = PBXGroup;
 			children = (
+				E4707E831BE751C1002D0490 /* MediaPlayer.framework */,
 				E4F95B7C1BCFA226006EF09B /* LightDownload */,
 				E4F95B7B1BCFA226006EF09B /* Products */,
 			);
@@ -92,12 +113,14 @@
 		E4F95B7D1BCFA226006EF09B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4707E8A1BE7654F002D0490 /* test.mp4 */,
 				E4D7983C1BDE6E7300CA3E58 /* 1.mp3 */,
 				E4D7983A1BDE699B00CA3E58 /* AVFoundation.framework */,
 				E4D798381BDDFA0200CA3E58 /* AudioToolbox.framework */,
 				E4F95B891BCFA227006EF09B /* Assets.xcassets */,
 				E4F95B8E1BCFA227006EF09B /* Info.plist */,
 				E4F95B7E1BCFA226006EF09B /* main.m */,
+				E4707E7E1BE74481002D0490 /* Settings.bundle */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -109,6 +132,8 @@
 				E4F95B8B1BCFA227006EF09B /* LaunchScreen.storyboard */,
 				E4D798311BDD01B100CA3E58 /* FilesTableView.xib */,
 				E4D798361BDDD47E00CA3E58 /* ImageView.xib */,
+				E4F8736D1BE709AB001F35FB /* MusicView.xib */,
+				E4707E881BE75DFE002D0490 /* VideoView.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -122,6 +147,10 @@
 				E4D7982F1BDD016B00CA3E58 /* FilesTableView.m */,
 				E4D798331BDDD46400CA3E58 /* ImageView.h */,
 				E4D798341BDDD46400CA3E58 /* ImageView.m */,
+				E4F8736A1BE70996001F35FB /* MusicView.h */,
+				E4F8736B1BE70996001F35FB /* MusicView.m */,
+				E4707E851BE75D95002D0490 /* VideoView.h */,
+				E4707E861BE75D95002D0490 /* VideoView.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -131,6 +160,8 @@
 			children = (
 				E4F95BEB1BD08CBC006EF09B /* DownloadService.h */,
 				E4F95BEC1BD08CBC006EF09B /* DownloadService.m */,
+				E4707E801BE751AD002D0490 /* PlayerSetting.h */,
+				E4707E811BE751AD002D0490 /* PlayerSetting.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -166,7 +197,6 @@
 				TargetAttributes = {
 					E4F95B791BCFA226006EF09B = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = YGTXB4R2WQ;
 					};
 				};
 			};
@@ -193,7 +223,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4707E7F1BE74481002D0490 /* Settings.bundle in Resources */,
 				E4F95B8D1BCFA227006EF09B /* LaunchScreen.storyboard in Resources */,
+				E4707E891BE75DFE002D0490 /* VideoView.xib in Resources */,
+				E4707E8B1BE7654F002D0490 /* test.mp4 in Resources */,
+				E4F8736E1BE709AB001F35FB /* MusicView.xib in Resources */,
 				E4D798371BDDD47E00CA3E58 /* ImageView.xib in Resources */,
 				E4D798321BDD01B100CA3E58 /* FilesTableView.xib in Resources */,
 				E4F95B8A1BCFA227006EF09B /* Assets.xcassets in Resources */,
@@ -214,7 +248,10 @@
 				E4F95B821BCFA226006EF09B /* AppDelegate.m in Sources */,
 				E4D798301BDD016B00CA3E58 /* FilesTableView.m in Sources */,
 				E4D798351BDDD46400CA3E58 /* ImageView.m in Sources */,
+				E4707E871BE75D95002D0490 /* VideoView.m in Sources */,
+				E4707E821BE751AD002D0490 /* PlayerSetting.m in Sources */,
 				E4F95B7F1BCFA226006EF09B /* main.m in Sources */,
+				E4F8736C1BE70996001F35FB /* MusicView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,9 +368,9 @@
 				INFOPLIST_FILE = LightDownload/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.evideo.weiju.LightDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadow.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3c589347-ea9d-40c3-a34f-9ca7a2657667";
 			};
 			name = Debug;
 		};
@@ -346,9 +383,9 @@
 				INFOPLIST_FILE = LightDownload/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.evideo.weiju.LightDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shadow.tunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3c589347-ea9d-40c3-a34f-9ca7a2657667";
 			};
 			name = Release;
 		};

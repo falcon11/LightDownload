@@ -8,6 +8,8 @@
 
 #import "FilesTableView.h"
 #import "ImageView.h"
+#import "MusicView.h"
+#import "VideoView.h"
 #import <AVFoundation/AVFoundation.h>
 
 @interface FilesTableView()<UITableViewDelegate, UITableViewDataSource>
@@ -34,7 +36,9 @@
     [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"1" ofType:@"mp3"];
     NSLog(@"filepath:%@...............", filePath);
-    [self playMusic:filePath];
+    //[self playMusic:filePath];
+    VideoView *videoView = [[VideoView alloc] init];
+    [self.navigationController pushViewController:videoView animated:YES];
     
 }
 
@@ -104,11 +108,15 @@
     }
     else if([type isEqualToString:@"mp3"] || [type isEqualToString:@"wav"])
     {
-        [self playMusic:filePath];
+        //[self playMusic:filePath];
+        MusicView *musicView = [[MusicView alloc] init];
+        musicView.musicPath = filePath;
+        [self.navigationController pushViewController:musicView animated:YES];
     }
     else
     {
-        [self playMusic:filePath];
+        VideoView *videoView = [[VideoView alloc] init];
+        [self.navigationController pushViewController:videoView animated:YES];
     }
 }
 
