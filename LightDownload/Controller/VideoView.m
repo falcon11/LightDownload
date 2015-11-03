@@ -70,6 +70,8 @@
     [self createPlayer:path];
 }
 
+#pragma mark -
+
 - (void)loadStateDidChange:(NSNotification *)notification
 {
     NSLog(@"............loadStateDidChange");
@@ -77,17 +79,49 @@
 
 - (void)moviePlayBackDidFinish:(NSNotification *)notification
 {
-    
+    NSNumber *reason = [[notification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
+    if ([reason intValue] == MPMovieFinishReasonPlaybackEnded) {
+        NSLog(@"MPMovieFinishReasonPlaybackEnded");     //播放结束
+    }
+    else if ([reason intValue] == MPMovieFinishReasonPlaybackError)
+    {
+        NSLog(@"MPMovieFinishReasonPlaybackError");     //播放错误
+    }
+    else if([reason intValue] == MPMovieFinishReasonUserExited)
+    {
+        NSLog(@"MPMovieFinishReasonUserExited");    //退出播放
+    }
+    [self.controller.view removeFromSuperview];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)mediaIsPreParedToPlayDidChange:(NSNotification *)notification
 {
-    
+    NSLog(@"playbackIsPreparedToPlayDidChange");
 }
 
 - (void)moviePlayBackStateDidChange:(NSNotification *)notification
 {
-    
+    MPMoviePlayerController *player = notification.object;
+    if (player.playbackState == MPMoviePlaybackStateStopped) {
+        self.label.text = @"播放已停止";
+        NSLog(@"播放停止");
+    }
+    else if(player.playbackState == MPMoviePlaybackStatePlaying)
+    {
+        self.label.text = @"正在播放";
+        NSLog(@"正在播放");
+    }
+    else if(player.playbackState == MPMoviePlaybackStatePaused)
+    {
+        self.label.text = @"暂停";
+        NSLog(@"暂停");
+    }
+    else if (player.playbackState == MPMoviePlaybackStateInterrupted)
+    {
+        self.label.text = @"播放中断";
+        NSLog(@"播放中断");
+    }
 }
 
 /*
